@@ -1,0 +1,34 @@
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-page-container {
+  text-align: center;
+}
+
+.home-page-container h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.home-page-container p {
+  color: white;
+}
+
+.home-page-container button {
+  background-color: #6FFF5D;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-page-container button:hover {
+  background-color: #0056b3;
+  color: white;
+}

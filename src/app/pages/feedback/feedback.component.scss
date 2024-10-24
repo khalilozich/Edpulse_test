@@ -1,0 +1,35 @@
+
+.feedback-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.feedback-page-container {
+  text-align: center;
+}
+
+.feedback-page-container h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.feedback-page-container p {
+  color: white;
+}
+
+.feedback-page-container button {
+  background-color: #6FFF5D;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px
+}
+
+.feedback-page-container button:hover {
+  background-color: #0056b3;
+  color: white;
+}

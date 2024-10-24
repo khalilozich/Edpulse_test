@@ -1,0 +1,70 @@
+
+  <main class="registration-page">
+    <div class="container mx-auto">
+      <div class="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow-lg registration-page-form">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <h1 >Inscrivez-vous pour plus d’informations</h1>
+          <mat-form-field appearance="fill" class="w-full mb-4">
+            <mat-label>Nom complet</mat-label>
+            <input matInput formControlName="fullName" />
+            <mat-error *ngIf="form.get('fullName')?.invalid && (form.get('fullName')?.touched || form.get('fullName')?.dirty)">
+              <span *ngIf="form.get('fullName')?.errors?.['required']">Le nom est requis.</span>
+              <span *ngIf="form.get('fullName')?.errors?.['pattern']">Le nom doit contenir uniquement des lettres et des espaces.</span>
+              <span *ngIf="form.get('fullName')?.errors?.['minlength']">Le nom doit contenir au moins 3 caractères.</span>
+            </mat-error>
+          </mat-form-field>
+        
+          <mat-form-field appearance="fill" class="w-full mb-4">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+            <mat-error *ngIf="form.get('email')?.invalid && (form.get('email')?.touched || form.get('email')?.dirty)">
+              <span *ngIf="form.get('email')?.errors?.['required']">L'email est requis.</span>
+              <span *ngIf="form.get('email')?.errors?.['email']">L'email n'est pas valide.</span>
+            </mat-error>
+          </mat-form-field>
+        
+          <mat-form-field appearance="fill" class="w-full mb-4">
+            <mat-label>Téléphone</mat-label>
+            <input matInput formControlName="phone" />
+            <mat-error *ngIf="form.get('phone')?.invalid && (form.get('phone')?.touched || form.get('phone')?.dirty)">
+              <span *ngIf="form.get('phone')?.errors?.['required']">Le téléphone est requis.</span>
+              <span *ngIf="form.get('phone')?.errors?.['pattern']">Le numéro doit contenir 10 chiffres.</span>
+            </mat-error>
+          </mat-form-field>
+        
+          <mat-form-field appearance="fill" class="w-full mb-4">
+            <mat-label>Niveau d'anglais</mat-label>
+            <mat-select formControlName="englishLevel">
+              <mat-option value="beginner">Débutant</mat-option>
+              <mat-option value="intermediate">Intermédiaire</mat-option>
+              <mat-option value="advanced">Avancé</mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.get('englishLevel')?.invalid && (form.get('englishLevel')?.touched || form.get('englishLevel')?.dirty)">
+              <span *ngIf="form.get('englishLevel')?.errors?.['required']">Le niveau d'anglais est requis.</span>
+            </mat-error>
+          </mat-form-field>
+        
+          <mat-form-field appearance="fill" class="w-full mb-4">
+            <mat-label>Préférence de temps</mat-label>
+            <mat-select formControlName="timePreference">
+              <mat-option value="morning">Matin</mat-option>
+              <mat-option value="afternoon">Après-midi</mat-option>
+              <mat-option value="evening">Soir</mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.get('timePreference')?.invalid && (form.get('timePreference')?.touched || form.get('timePreference')?.dirty)">
+              <span *ngIf="form.get('timePreference')?.errors?.['required']">La préférence de temps est requise.</span>
+            </mat-error>
+          </mat-form-field>
+        
+          <mat-form-field appearance="fill" class="w-full mb-4">
+            <mat-label>Commentaires</mat-label>
+            <textarea matInput formControlName="comments"></textarea>
+          </mat-form-field>
+        
+          <button mat-raised-button type="submit" [disabled]="form.invalid">Soumettre</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+  

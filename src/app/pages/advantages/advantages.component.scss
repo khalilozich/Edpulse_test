@@ -1,0 +1,35 @@
+
+.advantages-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.advantages-page-container {
+  text-align: center;
+}
+
+.advantages-page-container h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.advantages-page-container p {
+  color: white;
+}
+
+.advantages-page-container button {
+  background-color: #6FFF5D;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px
+}
+
+.advantages-page-container button:hover {
+  background-color: #0056b3;
+  color: white;
+}

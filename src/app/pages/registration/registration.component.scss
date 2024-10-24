@@ -1,0 +1,36 @@
+.registration-page button {
+  background-color: #6FFF5D;
+  color: black;
+  border: none;
+  padding: 10pxs;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration-page button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.registration-page-form{
+  opacity: 0.9;
+}
+
+.registration-page-form h1 {
+  font-weight: bold;
+}
+
+.snackbar-success {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.snackbar-error {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.snackbar-info {
+  background-color: #2196f3;
+  color: #fff;
+}
