@@ -1,4 +1,4 @@
- Registration Form with Pabbly Connect Integration
+# Registration Form with Pabbly Connect Integration
  
 ## Description
 
@@ -30,11 +30,11 @@ If some fields are missing or invalid, an error message will be displayed.
 
 ## Links
 
-# Google Sheets Integration: https://docs.google.com/spreadsheets/d/1F43FJE7ulJ1bOy7uJHVU2Ai0tja_vu4dgdkKyElKqRA/edit?usp=sharing
+ Google Sheets Integration: https://docs.google.com/spreadsheets/d/1F43FJE7ulJ1bOy7uJHVU2Ai0tja_vu4dgdkKyElKqRA/edit?usp=sharing
 
-# Pabbly Workflow 1 : https://connect.pabbly.com/workflow/mapping/IjU3NjYwNTZjMDYzNDA0M2M1MjZjNTUzNDUxMzUi_pc
+ Pabbly Workflow 1 : https://connect.pabbly.com/workflow/mapping/IjU3NjYwNTZjMDYzNDA0M2M1MjZjNTUzNDUxMzUi_pc
 
-# Pabbly Workflow 2 : https://connect.pabbly.com/workflow/mapping/IjU3NjYwNTZjMDYzNDA0MzM1MjY1NTUzNzUxMzYi_pc
+  Pabbly Workflow 2 : https://connect.pabbly.com/workflow/mapping/IjU3NjYwNTZjMDYzNDA0MzM1MjY1NTUzNzUxMzYi_pc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
 
