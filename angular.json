@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs/edpulse-subscribe",
+            "outputPath": "docs/Edpulse_test",
             "baseHref": "/Edpulse_test/",
             "index": "src/index.html",
             "browser": "src/main.ts",
